@@ -33,67 +33,7 @@ EmployeeManagementSystem/
 
 ---
 
-## OOP Concepts Implemented
 
-### Encapsulation
-
-Employee details are encapsulated inside the Employee class using private fields and public getter methods.
-
-### Classes and Objects
-
-* Employee
-* EmployeeManager
-* EmployeeException
-
-### Exception Handling
-
-Custom exception handling is implemented using the EmployeeException class for invalid operations.
-
----
-
-## Collections Framework Usage
-
-### ArrayList
-
-Used to store employee records.
-
-```java
-ArrayList<Employee> employees;
-```
-
----
-
-## Java 8 Features
-
-### Optional
-
-Used while searching for employees.
-
-```java
-Optional<Employee> employee =
-        employees.stream()
-                 .filter(e -> e.getEmployeeId() == employeeId)
-                 .findFirst();
-```
-
-### Stream API
-
-Used for searching, filtering, and sorting employee records.
-
-```java
-employees.stream()
-         .filter(e -> e.getDepartment().equalsIgnoreCase("IT"));
-```
-
-### Lambda Expressions
-
-Used for displaying employee records.
-
-```java
-employees.forEach(System.out::println);
-```
-
----
 
 ## How to Compile
 
@@ -129,8 +69,3 @@ java Main
 
 ---
 
-## Author
-
-Week 1 – Assignment 2
-
-Employee Management System developed as part of Java Basics training and internship evaluation.
